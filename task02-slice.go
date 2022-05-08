@@ -2,9 +2,8 @@ package homework
 
 func reverse(input []int64) (result []int64) {
 	var inverse []int64
-
-	for _, s := range input {
-		inverse = append(inverse, s)
+	for i := len(input) - 1; i >= 0; i-- {
+		inverse = append(inverse, input[i])
 	}
 	return inverse
 }
