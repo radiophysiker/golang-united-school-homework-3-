@@ -1,6 +1,10 @@
 package homework
 
 func reverse(input []int64) (result []int64) {
-	//Place your code here
-	return
+	var inverse []int64
+
+	for _, s := range input {
+		inverse = append(inverse, s)
+	}
+	return inverse
 }
